@@ -8,41 +8,6 @@ echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
 
-echo "#################################"
-echo "Enable Network Service"
-echo "#################################"
-systemctl enable --now NetworkManager
-
-echo "#################################"
-echo "Enable CUPS Printing Service"
-echo "#################################"
-systemctl enable --now cups
-
-echo "#################################"
-echo "Enable Open-VM Tools Service"
-echo "#################################"
-systemctl enable --now vmtoolsd
-
-echo "#################################"
-echo "Enable VM-Block Service"
-echo "#################################"
-systemctl enable --now vmware-vmblock-fuse
-
-echo "#################################"
-echo "Enable QEMU Service"
-echo "#################################"
-systemctl enable --now qemu-guest-agent
-
-echo "#################################"
-echo "Enable Bluetooth Service"
-echo "#################################"
-systemctl enable bluetooth
-
-echo "#################################"
-echo "Enable FSTrim timer Service"
-echo "#################################"
-systemctl enable fstrim.timer
-
 echo "Bluetooth improvements"
 echo "#################################"
 sed -i "s/#AutoEnable=false/AutoEnable=true/g" /etc/bluetooth/main.conf
