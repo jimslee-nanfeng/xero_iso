@@ -174,9 +174,9 @@ system-config-printer
 ### XeroLinux Build
 
 xero-calamares
-xero-fix-tools
 xerolinux-tool
 xero-kde-config
+xero-fix-scripts
 calamares-config
 xerolinux-mirrorlist
 
