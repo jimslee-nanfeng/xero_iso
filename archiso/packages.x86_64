@@ -249,6 +249,7 @@ adobe-source-sans-pro-fonts
 
 ### Theme Tools
 
+#kvantum
 neofetch
 lightly-git
 latte-dock-git
@@ -257,8 +258,8 @@ kwin-effects-sliding-notifications
 
 ### Rice/Config Related
 
-kde-wallpapers
 layan-kde-git
+kde-wallpapers
 layan-gtk-theme-git
 tela-purple-icon-theme-git
 
