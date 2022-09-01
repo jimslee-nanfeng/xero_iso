@@ -115,6 +115,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 vpnc
+wireguard-tools
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -149,35 +150,24 @@ xf86-video-openchrome
 
 ### Input
 
-synapse
-libinput
-xf86-input-void
-xf86-input-evdev
-xf86-input-vmmouse
-xf86-input-libinput
-xf86-input-synaptics
-xf86-input-elographics
+fingerprint-gui
+input-devices-support
 
-### Printer
+### Printers & Scanner support
 
-cups
-splix
-gsfonts
-cups-pdf
-bluez-cups
-gutenprint
-ghostscript
-cups-filters
 print-manager
-system-config-printer
+printer-support
+scanner-support
 
 ### XeroLinux Build
 
 xero-calamares
+mhwd-xerolinux
 xerolinux-tool
 xero-kde-config
 xero-fix-scripts
 calamares-config
+mhwd-db-xerolinux
 xerolinux-mirrorlist
 
 #######################################################
@@ -198,7 +188,6 @@ bash-completion
 
 imwheel
 cryptsetup
-brightnessctl
 mkinitcpio-firmware
 power-profiles-daemon
 
@@ -236,6 +225,11 @@ numlockx
 lm_sensors
 grub-customizer
 
+### Bat to replace cat
+
+bat
+bat-extras
+
 ### Fonts
 
 ttf-droid
@@ -249,17 +243,17 @@ adobe-source-sans-pro-fonts
 
 ### Theme Tools
 
-#kvantum
+plank
 neofetch
 lightly-git
-latte-dock-git
+plank-themes
 kwin-effects-burn-my-windows-git
 kwin-effects-sliding-notifications
 
 ### Rice/Config Related
 
-layan-kde-git
 kde-wallpapers
+layan-kde-git
 layan-gtk-theme-git
 tela-purple-icon-theme-git
 
@@ -323,7 +317,6 @@ jsoncpp
 archey3
 fuseiso
 gettext
-xdotool
 node-gyp
 intltool
 hw-probe
@@ -372,21 +365,30 @@ bluez
 blueberry
 bluez-libs
 bluez-utils
+bluez-plugins
+bluez-hid2hci
 
 ### Network
 
 avahi
+openldap
 nss-mdns
 smbclient
 net-tools
+openresolv
 traceroute
 modemmanager
 networkmanager
+nm-cloud-setup
 rate-mirrors-bin
 networkmanager-vpnc
 networkmanager-pptp
+networkmanager-l2tp
+network-manager-sstp
 network-manager-applet
 networkmanager-openvpn
+networkmanager-strongswan
+networkmanager-fortisslvpn
 networkmanager-openconnect
 mobile-broadband-provider-info
 
@@ -517,7 +519,6 @@ plasma-desktop
 plasma-framework
 plasma-workspace
 plasma-integration
-plasma-thunderbolt
 plasma-systemmonitor
 plasma-browser-integration
 
@@ -560,7 +561,7 @@ markdownpart
 ## Networking
 
 kdeconnect
-zeroconf-ioslave
+kio-zeroconf
 kdenetwork-filesharing
 signon-kwallet-extension
 

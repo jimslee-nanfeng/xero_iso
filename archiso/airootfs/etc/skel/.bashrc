@@ -24,11 +24,19 @@ if [ -d '$HOME/.local/bin' ] ;
   then PATH='$HOME/.local/bin:$PATH'
 fi
 
+# Path to bat config
+export BAT_CONFIG_PATH="~/.config/bat/config.conf"
+
 # Path to your Snap installation.
 export PATH=$PATH:/snap/bin
 
 ##Snapper Stuff
 alias snapls='sudo snapper list'
+
+# Replace stuff with bat
+alias cat='bat '
+alias rg='batgrep '
+alias man='batman '
 
 ##Cmatrix thing
 alias matrix='cmatrix -s -C cyan'
@@ -73,6 +81,7 @@ alias linstall='sudo pacman -U '
 alias update='sudo pacman -Syyu'
 alias clrcache='sudo pacman -Scc'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
+alias akring='sudo pacman -Sy archlinux-keyring --noconfirm'
 
 # Paru/Yay stuff
 alias pget='paru -S '
@@ -80,12 +89,8 @@ alias yget='yay -S '
 alias yrem='yay -R '
 alias prem='paru -R '
 
-
 #Flatpak Update
 alias fpup='flatpak update'
-
-#Snap Update
-alias sup='sudo snap refresh'
 
 #skip integrity check
 alias paruskip='paru -S --mflags --skipinteg'
@@ -100,10 +105,9 @@ alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --
 
 #Bash aliases
 alias mkfile='touch'
-alias thor='sudo thunar'
 alias jctl='journalctl -p 3 -xb'
-alias ssaver='xscreensaver-demo'
-alias reload='cd ~ && source ~/.bashrc'
+alias breload='cd ~ && source ~/.bashrc'
+alias zreload='cd ~ && source ~/.zshrc'
 alias pingme='ping -c64 github.com'
 alias cls='clear && neofetch'
 alias traceme='traceroute github.com'
@@ -112,11 +116,7 @@ alias traceme='traceroute github.com'
 alias hw='hwinfo --short'
 
 #youtube-dl
-alias yta-aac="yt-dlp --extract-audio --audio-format aac "
 alias yta-best="yt-dlp --extract-audio --audio-format best "
-alias yta-flac="yt-dlp --extract-audio --audio-format flac "
-alias yta-mp3="yt-dlp --extract-audio --audio-format mp3 "
-
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
 #GiT  command
@@ -133,14 +133,15 @@ alias scpd='sudo cp -R'
 
 #nano
 alias nz='$EDITOR ~/.zshrc'
-alias bashrc='sudo nano ~/.bashrc'
+alias nbashrc='sudo nano ~/.bashrc'
+alias nzshrc='sudo nano ~/.zshrc'
 alias nsddm='sudo nano /etc/sddm.conf'
 alias pconf='sudo nano /etc/pacman.conf'
 alias mkpkg='sudo nano /etc/makepkg.conf'
 alias ngrub='sudo nano /etc/default/grub'
 alias smbconf='sudo nano /etc/samba/smb.conf'
 alias nlightdm='sudo $EDITOR /etc/lightdm/lightdm.conf'
-alias nmirrorlist='sudo nano /etc/pacman.d/xero-mirrorlist'
+alias nmirrorlist='sudo nano /etc/pacman.d/mirrorlist'
 alias nsddmk='sudo $EDITOR /etc/sddm.conf.d/kde_settings.conf'
 
 #cd/ aliases
@@ -170,21 +171,12 @@ alias tosddm="sudo pacman -S sddm --noconfirm --needed ; sudo systemctl enable s
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 alias riplong="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -3000 | nl"
 
-## Tool Related
-alias fixme='sh /usr/local/bin/data/fixes'
-alias shell='sh /usr/local/bin/data/shell'
-alias gaming='sh /usr/local/bin/data/gaming'
-alias riceme='sh /usr/local/bin/data/ricez'
-
 #Package Info
 alias info='sudo pacman -Si '
 alias infox='sudo pacman -Sii '
 
 ##Refresh Keys
 alias rkeys='sudo pacman-key --refresh-keys'
-
-#PiAi
-alias xlai='sudo -E /usr/lib/xero-piai/xero-piai --setupmode'
 
 #shutdown or reboot
 alias sr='sudo reboot'
