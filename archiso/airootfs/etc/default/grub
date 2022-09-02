@@ -1,9 +1,9 @@
 # GRUB boot loader configuration
 
-GRUB_DEFAULT="saved"
+GRUB_DEFAULT=0
 GRUB_TIMEOUT="5"
-GRUB_DISTRIBUTOR="xerolinux"
-GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog nvme_load=YES"
+GRUB_DISTRIBUTOR="XeroLinux"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet loglevel=3 nowatchdog nvme_load=yes"
 GRUB_DISABLE_OS_PROBER=false
 GRUB_CMDLINE_LINUX=""
 
@@ -55,4 +55,4 @@ GRUB_THEME="/boot/grub/themes/XeroKDE/theme.txt"
 
 # Uncomment to make GRUB remember the last selection. This requires
 # setting 'GRUB_DEFAULT=saved' above.
-GRUB_SAVEDEFAULT="true"
+#GRUB_SAVEDEFAULT="true"

@@ -39,7 +39,6 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
-grub
 hdparm
 hyperv
 intel-ucode
@@ -84,7 +83,6 @@ openconnect
 open-iscsi
 openssh
 openvpn
-os-prober
 partclone
 parted
 partimage
@@ -123,13 +121,20 @@ wvdial
 xfsprogs
 xl2tpd
 
+### Grub Stuff
+
+xero-grub
+grub-tools
+update-grub
+grub-customizer
+os-prober-btrfs
+
 ### archiso-extra
 
 exa
 ntp
 most
 wget
-grub
 dialog
 repoctl
 haveged
@@ -203,7 +208,6 @@ ckbcomp
 kconfig
 kpmcore
 yaml-cpp
-grub-tools
 boost-libs
 polkit-qt5
 kcoreaddons
@@ -223,7 +227,6 @@ figlet
 okular
 numlockx
 lm_sensors
-grub-customizer
 
 ### Bat to replace cat
 
