@@ -123,7 +123,7 @@ xl2tpd
 
 ### Grub Stuff
 
-xero-grub
+grub
 grub-tools
 update-grub
 grub-customizer
