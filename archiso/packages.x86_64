@@ -123,7 +123,7 @@ xl2tpd
 
 ### Grub Stuff
 
-grub
+xero-grub
 grub-tools
 update-grub
 grub-customizer
@@ -225,6 +225,7 @@ jq
 gmrun
 figlet
 okular
+flatseal
 numlockx
 lm_sensors
 
@@ -250,6 +251,7 @@ plank
 neofetch
 lightly-git
 plank-themes
+kwin-bismuth-bin
 kwin-effects-burn-my-windows-git
 kwin-effects-sliding-notifications
 
@@ -436,7 +438,7 @@ python-websockets
 ### Browser
 
 firefox
-firefox-adblock-plus
+firefox-ublock-origin
 
 ### cursors
 
