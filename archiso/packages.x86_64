@@ -118,6 +118,7 @@ wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
+xdotool
 xfsprogs
 xl2tpd
 
@@ -155,8 +156,23 @@ xf86-video-openchrome
 
 ### Input
 
+piper
+imwheel
+fprintd
+libinput
+gestures
 fingerprint-gui
-input-devices-support
+xf86-input-void
+xf86-input-wacom
+xf86-input-evdev
+iio-sensor-proxy
+libinput-gestures
+game-devices-udev
+xf86-input-vmmouse
+xf86-input-libinput
+xf86-input-synaptics
+libinput_gestures_qt
+xf86-input-elographics
 
 ### Printers & Scanner support
 
@@ -191,8 +207,8 @@ bash-completion
 ###    PACKAGES THAT ARE BY TECHXERO ~ DARKXERO     ###
 #######################################################
 
-imwheel
 cryptsetup
+brightnessctl
 mkinitcpio-firmware
 power-profiles-daemon
 
