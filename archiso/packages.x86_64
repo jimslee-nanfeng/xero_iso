@@ -124,7 +124,7 @@ xl2tpd
 
 ### Grub Stuff
 
-xero-grub
+grub
 grub-tools
 update-grub
 grub-customizer
@@ -263,10 +263,9 @@ adobe-source-sans-pro-fonts
 
 ### Theme Tools
 
-plank
 neofetch
 lightly-git
-plank-themes
+latte-dock-git
 kwin-bismuth-bin
 kwin-effects-burn-my-windows-git
 kwin-effects-sliding-notifications
