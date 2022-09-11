@@ -5,7 +5,7 @@ iso_name="xerolinux"
 iso_label="XEROLINUX"
 iso_publisher="XeroLinux <https://xldb.techxero.com>"
 iso_application="XeroLinux Live/Rescue CD"
-iso_version="main"
+iso_version="$(date +%Y.%m)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
@@ -27,5 +27,4 @@ file_permissions=(
   ["/usr/local/bin/all-cores"]="0:0:755"
   ["/usr/local/bin/xerolinux-final"]="0:0:755"
   ["/usr/local/bin/services"]="0:0:755"
-  ["/usr/local/bin/welcome"]="0:0:755"
   )

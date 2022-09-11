@@ -182,9 +182,9 @@ scanner-support
 
 ### XeroLinux Build
 
+xerowelcome
 xero-calamares
 mhwd-xerolinux
-xerolinux-tool
 xero-kde-config
 xero-fix-scripts
 calamares-config
@@ -469,6 +469,7 @@ yay-bin
 flatpak
 topgrade
 pamac-gtk
+libpamac-flatpak-plugin
 pamac-tray-icon-plasma
 
 #######################################################
