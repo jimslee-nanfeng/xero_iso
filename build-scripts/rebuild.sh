@@ -181,10 +181,10 @@ echo
  	#Setting variables
 
  	oldname1='ArchLinux'
- 	newname1='XeroLinux-KDE'
+ 	newname1='XeroLinux'
 
  	oldname2='Arch Linux'
- 	newname2='XeroLinux-KDE'
+ 	newname2='XeroLinux'
 
  	echo "Changing all references"
  	echo
@@ -236,7 +236,7 @@ echo
 # 	echo
  	echo "Moving pkglist.x86_64.txt"
  	echo "########################"
- 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-main-pkglist.txt
+ 	cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-$(date +%Y.%m)-pkglist.txt
 
 
 #echo
