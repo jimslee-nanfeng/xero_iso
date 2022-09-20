@@ -468,6 +468,7 @@ yay-bin
 flatpak
 topgrade
 pamac-gtk
+pacseek-bin
 libpamac-flatpak-plugin
 pamac-tray-icon-plasma
 
