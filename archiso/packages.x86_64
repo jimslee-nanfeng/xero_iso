@@ -574,8 +574,9 @@ kalendar
 kmousetool
 ksystemlog
 khelpcenter
+kwallet-pam
 markdownpart
-#kwalletmanager
+kwalletmanager
 
 ## Networking
 
