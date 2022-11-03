@@ -123,10 +123,10 @@ xl2tpd
 ### Grub Stuff
 
 grub
+os-prober
 grub-tools
 update-grub
 grub-customizer
-os-prober-btrfs
 
 ### archiso-extra
 
