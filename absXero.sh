@@ -14,7 +14,7 @@ echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 
 	sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 	archisoProfile=xerolinux
-	profile=$archisoProfile
+	profile=xerolinux
 	profiledef=$archisoProfile/profiledef.sh
 	buildFolder=$HOME"/xero-build"
 	outFolder=$HOME"/xero-Out"
@@ -140,7 +140,7 @@ y | yes | Y | Yes | YES )
 			easterEgg=$(($easterEgg + 1))
 		else
 			echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
-			echo "No ${txBold}way${txReset} you messed this up ${txBold}${fgRed}$easterEgg${txReset} times!" && sleep 1.7
+			echo "No ${txBold}way${txReset} you messed this up ${txBold}${fgRed}${easterEgg}${txReset} times!" && sleep 1.7
 			echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 		fi
 		;;
@@ -160,7 +160,7 @@ n | N | no | No | NO )
 		echo "${fgRed}Invalid${txReset} response. ${txUnderline}Try again.${txReset}"
 		easterEgg=$(($easterEgg + 1))
 	else
-		echo "No ${txBold}way${txReset} you messed this up ${txBold}${fgRed}$easterEgg${txReset} times!" && sleep 1.7
+		echo "No ${txBold}way${txReset} you messed this up ${txBold}${fgRed}${easterEgg}${txReset} times!" && sleep 1.7
 	fi
 	;;
 esac
@@ -170,10 +170,11 @@ echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 echo "Adding ${fgCyan}build time${txReset} to /etc/dev-rel"
 dateBuild=$(date +%m-%d-%Y)
 echo "ISO built on : "$dateBuild
-sed -i "s/\(^ISO_BUILD=\).*/\1$dateBuild/" $profile/airootfs/etc/dev-rel
+sudo sed -i "s/\(^ISO_BUILD=\).*/\1$dateBuild/" $profile/airootfs/etc/dev-rel
 read -p "What would you like to set ISO_RELEASE to in dev-rel for ${fgCyan}release${txReset}? : " release
 echo "Oki. ISO_RELEASE will now be set to ${fgCyan}${release}${txReset}!"
 isoRelease=$(sed -n "s/\(^ISO_RELEASE=\)//p" $profile/airootfs/etc/dev-rel)
+#sudo sed -i "s/\(^ISO_RELEASE=\).*/\1$release/" $archisoProfile/airootfs/etc/dev-rel
 awk -v nR="$release" -v iR="$isoRelease" 'NR==2, NR==2 {sub(iR, nR)}1' $profile/airootfs/etc/dev-rel >> dev-rel
 mv dev-rel $profile/airootfs/etc/dev-rel
 echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
@@ -183,7 +184,7 @@ echo "Build ${fgCyan}starts${txReset} in ${fgRed}5 seconds!"
 echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 sleep 5
 
-sudo mkarchiso -v -w $buildFolder -o $outFolder $profile
+sudo mkarchiso -v -w $buildFolder -o $outFolder $archisoProfile
 cp $buildFolder/iso/arch/pkglist.x86_64.txt  $outFolder/xerolinux-$(date +%Y.%m)-pkglist.txt
 
 echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
