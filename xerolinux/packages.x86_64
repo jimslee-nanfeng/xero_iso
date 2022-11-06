@@ -126,7 +126,6 @@ grub
 os-prober
 grub-tools
 update-grub
-grub-customizer
 
 ### archiso-extra
 
