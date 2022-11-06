@@ -3,8 +3,8 @@
 
 iso_name="xerolinux"
 iso_label="XEROLINUX"
-iso_publisher="XeroLinux <https://xldb.techxero.com>"
-iso_application="XeroLinux Live/Rescue CD"
+iso_publisher="DarkXero"
+iso_application="XeroLinux"
 iso_version="$(date +%Y.%m)"
 install_dir="arch"
 buildmodes=('iso')

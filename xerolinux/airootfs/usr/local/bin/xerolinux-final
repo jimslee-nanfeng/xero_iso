@@ -38,17 +38,6 @@ rm /root/{.automated_script.sh,.zlogin}
 mv /etc/xerolinux-release /etc/lsb-release
 rm -rf /home/liveuser/
 
-#echo "XeroLinux-Tool in case no Internet"
-#echo "##################################"
-
-#if pacman -Qq xerolinux-tool-dev 1>/dev/null
-#then
-#   echo "Latest is installed, nothing to do..."
-#else
-#   sudo pacman -U --noconfirm /xtmpfs/xerolinux-tool-dev-any.pkg.tar.zst
-#   sudo rm /xtmpfs/xerolinux-tool-dev-any.pkg.tar.zst
-#fi
-
 echo "Permission of root"
 echo "#################################"
 chmod -v 750 /root
