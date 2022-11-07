@@ -38,9 +38,6 @@ alias cat='bat '
 alias rg='batgrep '
 alias man='batman '
 
-##Cmatrix thing
-alias matrix='cmatrix -s -C cyan'
-
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
 
@@ -75,10 +72,10 @@ alias userlist='cut -d: -f1 /etc/passwd'
 #Pacman for software managment
 alias upall='topgrade'
 alias search='sudo pacman -Qs'
-alias remove='sudo pacman -R'
+alias remove='sudo pacman -Rcns'
 alias install='sudo pacman -S'
 alias linstall='sudo pacman -U '
-alias update='sudo pacman -Syyu'
+alias update='sudo pacman -Syyu && flatpak update'
 alias clrcache='sudo pacman -Scc'
 alias orphans='sudo pacman -Rns $(pacman -Qtdq)'
 alias akring='sudo pacman -Sy archlinux-keyring --noconfirm'
@@ -88,20 +85,6 @@ alias pget='paru -S '
 alias yget='yay -S '
 alias yrem='yay -R '
 alias prem='paru -R '
-
-#Flatpak Update
-alias fpup='flatpak update'
-
-#skip integrity check
-alias paruskip='paru -S --mflags --skipinteg'
-alias yayskip='yay -S --mflags --skipinteg'
-
-#grub update
-alias grubup='sudo grub-mkconfig -o /boot/grub/grub.cfg'
-
-#our experimental - best option for the moment
-alias mirrorx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 5 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
-alias mirrorxx="sudo reflector --age 6 --latest 20  --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist"
 
 #Bash aliases
 alias mkfile='touch'
@@ -115,13 +98,16 @@ alias traceme='traceroute github.com'
 #hardware info --short
 alias hw='hwinfo --short'
 
+## HBlock
+alias ublock='sudo hblock'
+
 #youtube-dl
 alias yta-best="yt-dlp --extract-audio --audio-format best "
 alias ytv-best="yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 "
 
 #GiT  command
-alias gc='git clone '
-alias gp='git pull'
+alias gcl='git clone '
+alias gpl='git pull'
 
 #Copy/Remove files/dirs
 alias rmd='rm -r'
