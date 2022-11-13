@@ -46,8 +46,8 @@ echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 	sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 	profile=xerolinux
 	profiledef=$profile/profiledef.sh
-	buildDir=$HOME"/absXeroBuild"
-	outDir=$HOME"/absXeroOut"
+	buildDir=$HOME"/xero-build"
+	outDir=$HOME"/xero-Out"
 	user=$(whoami)
 
 echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
@@ -228,7 +228,7 @@ sleep 5
 sudo mkarchiso -v -w $buildDir -o $outDir $profile
 sudo chown -R $user $buildDir
 sudo chown -R $user $outDir
-cp $buildDir/iso/arch/pkglist.x86_64.txt  $outDir/xerolinux-$(date +%Y.%m.%d)-pkglist.txt
+cp $buildDir/iso/arch/pkglist.x86_64.txt  $outDir/xerolinux-$(date +%Y.%m)-pkglist.txt
 
 echo $fgMagenta&&xUnicode 2730 49&&echo $txReset
 echo "${fgCyan}Done!${txReset} Look in ${txBold}${outFolder}${txReset} for your ${txUnderline}build and iso folder${txReset}!"

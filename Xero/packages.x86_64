@@ -248,17 +248,15 @@ bat-extras
 
 ### Fonts
 
-ttf-droid
-ttf-roboto
+ttf-ms-fonts
+ttf-fira-code
 ttf-hack-nerd
-otf-libertinus
-tex-gyre-fonts
-nerd-fonts-fira-code
 awesome-terminal-fonts
 adobe-source-sans-pro-fonts
 
 ### Theme Tools
 
+lolcat
 neofetch
 lightly-git
 latte-dock-git
@@ -458,6 +456,7 @@ breeze
 
 ### Multimedia
 
+ffmpeg
 ffmpegthumbs
 
 ### PKG Management
