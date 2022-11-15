@@ -31,7 +31,7 @@ Once you got Repos in, time to grab the build environment that you will be build
 
 **Install Git with :**
 ```
-sudo pacman -S git[/code]
+sudo pacman -S git
 ```
 **Grab Build Env.**
 ```
@@ -42,23 +42,10 @@ cd ~ && git clone https://github.com/xerolinux/xero_iso.git
 
 Now that we have build environment on our system, it's time to build it.
 
-** Build ISO :**
+**Build ISO :**
 ```
 cd ~/xero_iso/ && abs Xero
 ```
-
-**Build Issue :**
-
-Sometimes a "proc" folder stays mounted, in case you interrupt build process or it hangs...
-
-To fix issue, wait a couple of minutes, then unmount it with this command :
-```
-sudo umount /home/{username}/ followed by tab key...
-
-Replace {username} with yours of course...
-```
-
-Press "Tab" key on keyboard to auto-complete, followed by "Enter" key.. If you get "Busy" message wait a bit longer then repeat until it works ;)
 
 I hope this helps.. In case of other issues kindly find me on [**Discord**](https://discord.gg/Xg6T78ahtK)
 
