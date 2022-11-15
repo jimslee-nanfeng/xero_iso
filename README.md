@@ -60,6 +60,6 @@ Replace {username} with yours of course...
 
 Press "Tab" key on keyboard to auto-complete, followed by "Enter" key.. If you get "Busy" message wait a bit longer then repeat until it works ;)
 
-I hope this helps.. In case of other issues kindly find me on [**Discord**] (https://discord.gg/Xg6T78ahtK)
+I hope this helps.. In case of other issues kindly find me on [**Discord**](https://discord.gg/Xg6T78ahtK)
 
 Happy building
