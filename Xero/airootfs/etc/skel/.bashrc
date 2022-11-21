@@ -27,16 +27,10 @@ fi
 # Path to bat config
 export BAT_CONFIG_PATH="~/.config/bat/config.conf"
 
-# Path to your Snap installation.
-export PATH=$PATH:/snap/bin
-
-##Snapper Stuff
-alias snapls='sudo snapper list'
-
 # Replace stuff with bat
 alias cat='bat '
 alias rg='batgrep '
-alias man='batman '
+alias man='tldr '
 
 #iso and version used to install ArcoLinux
 alias iso="cat /etc/dev-rel | awk -F '=' '/ISO/ {print $2}'"
@@ -158,6 +152,11 @@ alias infox='sudo pacman -Sii '
 
 ##Refresh Keys
 alias rkeys='sudo pacman-key --refresh-keys'
+
+### HBLOCK Stuff
+
+alias block="sudo hblock"
+alias unhblock="hblock -S none -D none"
 
 #shutdown or reboot
 alias sr='sudo reboot'

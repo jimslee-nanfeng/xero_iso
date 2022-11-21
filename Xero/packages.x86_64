@@ -105,6 +105,7 @@ systemd-resolvconf
 tcpdump
 terminus-font
 testdisk
+tldr
 tmux
 tpm2-tss
 udftools
@@ -147,6 +148,7 @@ logrotate
 ### Video
 
 mesa
+autorandr
 xf86-video-qxl
 xf86-video-fbdev
 xf86-video-vmware
@@ -353,11 +355,10 @@ dbus-python
 dconf-editor
 laptop-detect
 perl-xml-parser
-edid-decode-git
+#edid-decode-git
 gnome-disk-utility
 appmenu-gtk-module
 hardcode-fixer-git
-systemd-manager-git
 extra-cmake-modules
 
 ### G-Streamer
