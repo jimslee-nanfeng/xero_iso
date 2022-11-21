@@ -4,7 +4,7 @@ Repo for **XeroLinux** ISO. Feel free to go through files and learn how it's all
 
 -----------------------------------------------------------------
 
-![XeroLinux-Calamares](https://i.imgur.com/9sjGFSN.png)
+![XeroLinux-Calamares](https://i.imgur.com/M9in3wH.jpg)
 
 
 ### Step 1 - Get Repo in to build :
