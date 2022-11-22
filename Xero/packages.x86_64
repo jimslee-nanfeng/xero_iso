@@ -239,10 +239,12 @@ gtk-update-icon-cache
 jq
 gmrun
 figlet
+ostree
 okular
 flatseal
 numlockx
 lm_sensors
+appstream-glib
 
 ### Bat to replace cat
 
@@ -251,8 +253,9 @@ bat-extras
 
 ### Fonts
 
-ttf-ms-fonts
 ttf-fira-code
+otf-libertinus
+tex-gyre-fonts
 ttf-hack-nerd
 awesome-terminal-fonts
 adobe-source-sans-pro-fonts
@@ -269,8 +272,8 @@ kwin-effects-sliding-notifications
 
 ### Rice/Config Related
 
-kde-wallpapers
 layan-kde-git
+kde-wallpapers
 layan-gtk-theme-git
 tela-purple-icon-theme-git
 
