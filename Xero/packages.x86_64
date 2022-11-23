@@ -245,6 +245,7 @@ flatseal
 numlockx
 lm_sensors
 appstream-glib
+#systemd-manager-git
 
 ### Bat to replace cat
 
@@ -358,7 +359,7 @@ dbus-python
 dconf-editor
 laptop-detect
 perl-xml-parser
-#edid-decode-git
+edid-decode-git
 gnome-disk-utility
 appmenu-gtk-module
 hardcode-fixer-git

@@ -11,5 +11,5 @@ IPv6PrivacyExtensions=yes
 [DHCPv4]
 RouteMetric=700
 
-[DHCPv6]
+[IPv6AcceptRA]
 RouteMetric=700
