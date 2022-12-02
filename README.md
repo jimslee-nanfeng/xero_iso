@@ -50,6 +50,8 @@ Now that we have build environment on our system, it's time to build it.
 cd ~/xero_iso/ && abs Xero
 ```
 
+Follow the prompts and you good to go...
+
 I hope this helps.. In case of other issues kindly find me on [**Discord**](https://discord.gg/Xg6T78ahtK)
 
 Happy building
