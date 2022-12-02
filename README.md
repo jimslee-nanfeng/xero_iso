@@ -8,8 +8,6 @@ Repo for **XeroLinux** ISO. Feel free to go through files and learn how it's all
 
 <h1 align="center">You must be on an *Arch* based Distro to build ISO.</h1>
 
------------------------------------------------------------------
-
 ![XeroLinux](https://i.imgur.com/M9in3wH.jpg)
 
 
