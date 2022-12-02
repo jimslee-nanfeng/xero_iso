@@ -2,9 +2,15 @@
 
 Repo for **XeroLinux** ISO. Feel free to go through files and learn how it's all done. To build ISO follow the guide below...
 
+<p align="center">
+    <img width="300" src="https://i.imgur.com/QWqMIsr.png" alt="logo">
+</p>
+
+<h1 align="center">You must be on an *Arch* based Distro to build ISO.</h1>
+
 -----------------------------------------------------------------
 
-![XeroLinux-Calamares](https://i.imgur.com/M9in3wH.jpg)
+![XeroLinux](https://i.imgur.com/M9in3wH.jpg)
 
 
 ### Step 1 - Get Repo in to build :

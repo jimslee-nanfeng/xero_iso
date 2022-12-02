@@ -31,7 +31,7 @@ e2fsprogs
 edk2-shell
 efibootmgr
 ethtool
-exfatprogs
+exfat-utils
 f2fs-tools
 fatresize
 fd
