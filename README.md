@@ -1,6 +1,6 @@
 # XeroLinux ISO Repo
 
-Repo for **XeroLinux** ISO. Feel free to go through files and learn how it's all done. To build ISO follow the guide below...
+Repo for **XeroLinux** ISO. Feel free to build ISO using the guide below...
 
 <p align="center">
     <img width="300" src="https://i.imgur.com/QWqMIsr.png" alt="logo">
