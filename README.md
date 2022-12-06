@@ -6,6 +6,13 @@
 
 <h1 align="center">You must be on an *Arch* based Distro to build ISO.</h1>
 
+> The following are not supported Distros to build on since they
+> don't use Arch repos which will result in errors building the ISO.
+> - Manjaro (Their own Repos)
+> - CachyOS (Arch v3)
+> - KaOS (Limited Repos)
+> - Artix (No Systemd)
+
 ![XeroLinux](https://i.imgur.com/h8vohe7.jpg)
 
 
