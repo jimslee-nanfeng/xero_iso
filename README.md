@@ -6,7 +6,7 @@
 
 <h1 align="center">You must be on an *Arch* based Distro to build ISO.</h1>
 
-![XeroLinux](https://i.imgur.com/M9in3wH.jpg)
+![XeroLinux](https://i.imgur.com/h8vohe7.jpg)
 
 
 ### Step 1 - Get Repo in to build :
