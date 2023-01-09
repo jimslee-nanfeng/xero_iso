@@ -8,6 +8,7 @@
 
 > The following are not supported Distros to build on since they
 > don't use Arch repos which will result in errors building the ISO.
+> - Garuda Linux (Fails to build)
 > - Manjaro (Own Repos)
 > - CachyOS (Arch v3)
 > - KaOS (Limited Repos)

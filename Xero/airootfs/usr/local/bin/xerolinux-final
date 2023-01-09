@@ -56,7 +56,7 @@ sudo flatpak override --filesystem=xdg-config/gtk-4.0:ro
 
 echo "Remove no longer needed packages"
 echo "#################################"
-sudo pacman -Rdd --noconfirm xero-calamares calamares-config mkinitcpio-archiso ckbcomp kpmcore
+sudo pacman -Rdd --noconfirm xero-calamares calamares-config ckbcomp kpmcore mkinitcpio-archiso
 
 echo "Setting KGPg Never to start"
 echo "#################################"
