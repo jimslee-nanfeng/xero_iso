@@ -19,7 +19,9 @@
 
 ### Step 1 - Get Repo in to build :
 
-Before we get started we will need to get the ABS repo in, that's where the new build tool is located. To do so need to edit the "pacman.conf" :
+Before we get started we will need to get the **ABS** repo in, that's where the new build tool is located. To do so need to edit the "pacman.conf". Use either methods to do so :
+
+**- Method 1 :**
 
 ```
 sudo nano /etc/pacman.conf
@@ -32,6 +34,15 @@ Now we need to add the repo at the end of the file, so add this,
 SigLevel = Never
 Server = https://keyaedisa.github.io/$repo/$arch
 ```
+
+**- Method 2 :**
+
+Type the following command using `sudo` in terminal done !
+
+```
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyaedisa/valen_repo/trunk/install/addRepo2PacmanConf.sh)""
+```
+
 Now install the tool via,
 ```
 sudo pacman -S abs
