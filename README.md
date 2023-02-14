@@ -66,7 +66,7 @@ Now that we have build environment on our system, it's time to build it.
 
 **Build ISO :**
 ```
-cd ~/xero_iso/ && abs Xero
+cd ~/xero_iso/ && abs -x
 ```
 
 Follow the prompts and you good to go...
