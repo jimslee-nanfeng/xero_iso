@@ -518,6 +518,7 @@ ksysguard
 bluedevil
 powerdevil
 libkscreen
+flatpak-kcm
 kinfocenter
 ksshaskpass
 kdecoration
@@ -530,6 +531,7 @@ knotifications
 systemsettings
 kde-gtk-config
 packagekit-qt5
+layer-shell-qt
 polkit-kde-agent
 kactivitymanagerd
 kdenetwork-filesharing
