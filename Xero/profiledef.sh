@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="xerolinux"
-iso_label="XERO_$(date +%Y%m)"
+iso_label="XERO_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="DarkXero"
 iso_application="xerolinux"
-iso_version="$(date +%Y.%m)"
+iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
