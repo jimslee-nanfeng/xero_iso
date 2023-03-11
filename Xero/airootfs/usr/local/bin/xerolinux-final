@@ -54,13 +54,9 @@ sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=xdg-config/gtk-3.0:ro
 sudo flatpak override --filesystem=xdg-config/gtk-4.0:ro
 
-echo "Remove no longer needed packages"
-echo "#################################"
-sudo pacman -Rdd --noconfirm xero-calamares calamares-config ckbcomp kpmcore mkinitcpio-archiso
-
 echo "Setting KGPg Never to start"
 echo "#################################"
-sudo sed -i '219 i OnlyShowIn=KDE' /etc/xdg/autostart/org.kde.kgpg.desktop
+sed -i '219 i OnlyShowIn=KDE' /etc/xdg/autostart/org.kde.kgpg.desktop
 
 echo "#################################"
 echo "End xerolinux-final"

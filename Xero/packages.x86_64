@@ -185,10 +185,10 @@ scanner-support
 
 abs
 xerowelcome
-xero-calamares
+calamares-app
+calamares-cfg
 xero-kde-config
 xero-fix-scripts
-calamares-config
 xerolinux-mirrorlist
 
 #######################################################
