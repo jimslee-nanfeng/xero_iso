@@ -58,6 +58,10 @@ echo "Setting KGPg Never to start"
 echo "#################################"
 sed -i '219 i OnlyShowIn=KDE' /etc/xdg/autostart/org.kde.kgpg.desktop
 
+echo "Fixing SDDM.conf User"
+echo "#################################"
+sed -i "s/User=liveuser/User=/g" /etc/sddm.conf.d/kde_settings.conf
+
 echo "#################################"
 echo "End xerolinux-final"
 echo "#################################"
