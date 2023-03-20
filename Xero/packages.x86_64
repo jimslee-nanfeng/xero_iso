@@ -472,10 +472,12 @@ ffmpegthumbs
 yay-bin
 flatpak
 topgrade
+libpamac
 pamac-gtk
 pamac-cli
 pacseek-bin
 pamac-tray-icon-plasma
+libpamac-flatpak-plugin
 
 #######################################################
 ###                    EXTRAS                       ###
