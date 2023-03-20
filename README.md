@@ -40,7 +40,7 @@ Server = https://keyaedisa.github.io/$repo/$arch
 Type the following command using `sudo` in terminal done !
 
 ```
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyaedisa/valen_repo/trunk/install/addRepo2PacmanConf.sh)""
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/keyaedisa/valen_repo/trunk/install/addRepo2PacmanConf.sh)"
 ```
 
 Now install the tool via,
